@@ -1,0 +1,104 @@
+.section {
+  display: flex;
+  align-items: center;
+  @include x-large {
+    display: block;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  &__img {
+    padding-top: 40%;
+    max-width: 724.35px;
+    width: 100%;
+    @include x-large {
+      padding-top: 20%;
+      margin: 0 auto;
+      display: block;
+    }
+    @include for-mobile {
+      padding-top: 0;
+    }
+  }
+}
+.build {
+  text-align: left;
+  margin-top: 44%;
+  @include x-large {
+    width: 325px;
+    flex-wrap: nowrap;
+    margin: 64px auto;
+    text-align: center;
+  }
+  &__title {
+    font-size: 43px;
+    font-weight: 700;
+    line-height: 62.4px;
+    max-width: 533.18px;
+    width: 100%;
+    color: #fff;
+    @include x-large {
+      max-width: 433px;
+      width: 100%;
+      font-size: 37px;
+      line-height: 50px;
+    }
+  }
+  &__number {
+    padding-top: 70px;
+    display: flex;
+    &__box {
+      text-align: left;
+      border-right: 1px solid #626276;
+      padding-right: 25px;
+      &__span {
+        font-size: 38px;
+        font-weight: 700;
+        line-height: 49.4px;
+        color: $orange-yellow;
+        padding-bottom: 13px;
+        @include x-large {
+          font-size: 28px;
+        }
+      }
+      &__p {
+        font-family: $font-regular;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 25.2px;
+        text-align: left;
+        max-width: 203px;
+        width: 100%;
+        color: $grey-color;
+        @include x-large {
+          font-size: 10px;
+        }
+      }
+    }
+    &__box-2 {
+      text-align: left;
+      padding-left: 40px;
+      &__span {
+        font-size: 38px;
+        font-weight: 700;
+        line-height: 49.4px;
+        padding-bottom: 13px;
+        color: #fb5607;
+        @include x-large {
+          font-size: 28px;
+        }
+      }
+      &__p {
+        font-family: $font-regular;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 25.2px;
+        max-width: 203px;
+        width: 100%;
+        color: $grey-color;
+        @include x-large {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}

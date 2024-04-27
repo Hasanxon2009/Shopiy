@@ -1,0 +1,59 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 41px;
+  @include for-mobile {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  &__ul {
+    display: flex;
+    column-gap: 53.55px;
+    margin-top: 16px;
+    @include x-large {
+      column-gap: 40px;
+      font-size: 15px;
+    }
+    @include for-tablet {
+      column-gap: 20px;
+      font-size: 8px;
+    }
+    @include for-mobile {
+      flex-direction: column;
+      row-gap: 20px;
+      padding-top: 20px;
+      padding-bottom: 30px;
+    }
+  }
+  &__icons {
+    &__i {
+      font-size: 21px;
+      color: $grey-color;
+      padding-left: 41.67px;
+      transition: all 0.3s;
+      @include x-large {
+        font-size: 20px;
+        padding-left: 30px;
+      }
+      @include for-tablet {
+        font-size: 18px;
+        padding-left: 20px;
+      }
+      @include for-mobile {
+        padding-left: 30px;
+      }
+    }
+    &__i:hover {
+      color: #fff;
+      cursor: pointer;
+    }
+  }
+}
+.facebook {
+  padding-left: 0;
+  @include for-mobile {
+    padding-left: 30px;
+  }
+}

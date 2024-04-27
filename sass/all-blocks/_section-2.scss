@@ -1,0 +1,85 @@
+.busines {
+  margin: 117px 0 185px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @include x-large {
+    flex-wrap: wrap;
+    margin: 117px auto;
+    justify-content: center;
+  }
+  &__left {
+    text-align: left;
+    @include x-large {
+      text-align: center;
+      margin: 0 auto;
+    }
+    &__title {
+      max-width: 533.18px;
+      width: 100%;
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 62.4px;
+      padding-top: 26px;
+      padding-bottom: 36px;
+      color: #fff;
+    }
+    &__text {
+      max-width: 421px;
+      width: 100%;
+      font-family: $font-regular;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 28.8px;
+      color: $grey-color;
+      @include x-large {
+        text-align: center;
+        margin: 0 auto;
+        padding-bottom: 70px;
+      }
+    }
+  }
+  &__right {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 556.53px;
+    width: 100%;
+    @include for-mobile {
+      justify-content: center;
+      row-gap: 20px;
+    }
+    &__card {
+      padding: 24px 23px 24px 22px;
+      width: 267.5px;
+      text-align: left;
+      @include x-large {
+        text-align: center;
+      }
+      &__title {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 26px;
+        color: #fff;
+        padding-top: 31px;
+        padding-bottom: 20px;
+        @include for-mobile {
+          font-size: 13px;
+          line-height: 20px;
+        }
+      }
+      &__text {
+        max-width: 222.2px;
+        width: 100%;
+        font-family: $font-regular;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 25.2px;
+        color: $grey-color;
+      }
+    }
+  }
+}
+.card-2 {
+  background-color: #1a1a3d;
+  border-radius: 10px;
+}
